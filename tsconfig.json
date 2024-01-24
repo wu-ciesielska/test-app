@@ -1,0 +1,34 @@
+{
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "./coverage",
+        "./dist",
+        "__tests__",
+        "jest.config.js",
+    ],
+    "ts-node": {
+        "transpileOnly": true,
+        "files": true
+    },
+    "compilerOptions": {
+        "outDir": "lib",
+        "rootDir": ".",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "lib": [
+            "es2023"
+        ],
+        "module": "Node16",
+        "target": "es2022",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "Node16",
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    }
+}
